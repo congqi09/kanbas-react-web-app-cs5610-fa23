@@ -1,10 +1,11 @@
 import './App.css';
 import Labs from './Labs';
+import HelloWorld from './Labs/a3/HellloWorld'
 
 function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <HelloWorld />
       <Labs />
     </div>
   );
