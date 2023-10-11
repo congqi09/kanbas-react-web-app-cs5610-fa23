@@ -3,16 +3,18 @@ import VariableTypes from "./VariableTypes";
 import BooleanVariables from "./BooleanVariables"
 import IfElse from "./IfElse";
 import TernaryOperator from "./TernaryOperator";
+import WorkingWithFunctions from "./WorkingWithFunctions";
 function JavaScript() {
     console.log('Hello World!');
     return(
         <div>
             <h1>JavaScript</h1>
-            <VariablesAndConstants />
+            {/* <VariablesAndConstants />
             <VariableTypes />
             <BooleanVariables />
             <IfElse />
-            <TernaryOperator />
+            <TernaryOperator /> */}
+            <WorkingWithFunctions />
         </div>
     );
 }
