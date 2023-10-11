@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // strict mode may cause react render two times //
   <React.StrictMode>
     <App />
   </React.StrictMode>
