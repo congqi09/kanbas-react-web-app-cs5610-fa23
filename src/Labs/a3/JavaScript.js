@@ -4,6 +4,8 @@ import BooleanVariables from "./BooleanVariables"
 import IfElse from "./IfElse";
 import TernaryOperator from "./TernaryOperator";
 import WorkingWithFunctions from "./WorkingWithFunctions";
+import WorkingWithArrays from "./WorkingWithArrays";
+import JsonStringify from "./JsonStringify";
 function JavaScript() {
     console.log('Hello World!');
     return(
@@ -15,7 +17,10 @@ function JavaScript() {
             <IfElse />
             <TernaryOperator /> */}
             <WorkingWithFunctions />
+            <WorkingWithArrays />
+            <JsonStringify />
         </div>
     );
 }
+
 export default JavaScript

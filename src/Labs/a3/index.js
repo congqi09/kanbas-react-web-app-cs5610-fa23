@@ -1,4 +1,5 @@
 import JavaScript from "./JavaScript";
+import WorkingWithArrays from "./WorkingWithArrays";
 function Assignment3() {
     return (
         <div>
@@ -7,4 +8,4 @@ function Assignment3() {
         </div>
     );
 }
-export default Assignment3;
+export default Assignment3
