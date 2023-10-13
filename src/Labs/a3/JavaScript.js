@@ -8,6 +8,7 @@ import WorkingWithArrays from "./WorkingWithArrays";
 import JsonStringify from "./JsonStringify";
 import TemplateLiterals from "./TemplateLiterals";
 import House from "./House";
+import Spread from "./Spread";
 function JavaScript() {
     console.log('Hello World!');
     return(
@@ -23,6 +24,7 @@ function JavaScript() {
             <JsonStringify />
             <House />
             <TemplateLiterals />
+            <Spread />
         </div>
     );
 }
