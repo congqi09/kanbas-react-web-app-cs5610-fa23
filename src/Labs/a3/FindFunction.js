@@ -6,7 +6,7 @@ const FindFunction = () => {
     return (
         <>
             <h3>Find function</h3>
-            four = {four}
+            four = {four}<br/>
             string3 = {string3}
         </>
     )

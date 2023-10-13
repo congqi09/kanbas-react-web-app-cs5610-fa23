@@ -1,3 +1,4 @@
+import FindIndex from "./FindIndex";
 const ArrayIndexAndLength = () => {
     let numberArray1 = [1, 2, 3, 4, 5];
     const length1 = numberArray1.length;
@@ -7,6 +8,7 @@ const ArrayIndexAndLength = () => {
             <h4>Array index and length</h4>
             length1 = {length1}<br/>
             index1 = {index1}
+            <FindIndex />
         </>
     )
 }
