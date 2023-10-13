@@ -6,6 +6,8 @@ import TernaryOperator from "./TernaryOperator";
 import WorkingWithFunctions from "./WorkingWithFunctions";
 import WorkingWithArrays from "./WorkingWithArrays";
 import JsonStringify from "./JsonStringify";
+import TemplateLiterals from "./TemplateLiterals";
+import House from "./House";
 function JavaScript() {
     console.log('Hello World!');
     return(
@@ -19,6 +21,8 @@ function JavaScript() {
             <WorkingWithFunctions />
             <WorkingWithArrays />
             <JsonStringify />
+            <House />
+            <TemplateLiterals />
         </div>
     );
 }
