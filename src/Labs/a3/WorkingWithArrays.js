@@ -3,6 +3,7 @@ import AddingAndRemovingDataToFromArrays from './AddingAndRemovingDataToFromArra
 import ForLoops from './ForLoops'
 import MapFunction from './MapFunction';
 import FindFunction from './FindFunction';
+import FilterFunction from './FilterFunction';
 const WorkingWithArrays = () => {
     var functionScoped = 2;
     let blockScoped = 5;
@@ -21,10 +22,12 @@ const WorkingWithArrays = () => {
             stringArray1 = {stringArray1}<br/>
             variableArray1 = {variableArray1}<br/>
             <ArrayIndexAndLength />
+            <FilterFunction />
             <AddingAndRemovingDataToFromArrays />
             <ForLoops />
             <MapFunction />
             <FindFunction />
+            <FilterFunction />
         </>
     )
 }
