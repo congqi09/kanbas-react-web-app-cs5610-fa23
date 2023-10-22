@@ -1,6 +1,6 @@
 {
   "name": "kanbas-react-web-app-cs5610-fa23",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
