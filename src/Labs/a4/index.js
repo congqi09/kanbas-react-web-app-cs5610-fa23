@@ -9,21 +9,21 @@ import BooleanStateVariables from "./BooleanStateVariables";
 import StringStateVariables from "./StringStateVariables";
 import DateStateVariable from "./DateStateVariable";
 import ObjectStateVariable from "./ObjectStateVariable";
+import ArrayStateVariable from "./ArrayStateVariable";
 function Assignment4() {
     const sayHello = () => alert("Hello")
     return (
         <div>
             <h1>Assignment 4</h1>
             <PassingFunctions theFunction={sayHello} />
-            {/* <Add a={1} b={2} />
-            <ClickEvent/>
-            <PassingDataOnEvent /> */}
+            {/* <Add a={1} b={2} /><ClickEvent/><PassingDataOnEvent /> */}
             <EventObject />
             <Counter />
             <BooleanStateVariables />
             <StringStateVariables />
             <DateStateVariable />
             <ObjectStateVariable />
+            <ArrayStateVariable />
         </div>
     )
 }
