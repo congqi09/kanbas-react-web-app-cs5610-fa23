@@ -8,6 +8,7 @@ import Counter from "./Counter";
 import BooleanStateVariables from "./BooleanStateVariables";
 import StringStateVariables from "./StringStateVariables";
 import DateStateVariable from "./DateStateVariable";
+import ObjectStateVariable from "./ObjectStateVariable";
 function Assignment4() {
     const sayHello = () => alert("Hello")
     return (
@@ -22,6 +23,7 @@ function Assignment4() {
             <BooleanStateVariables />
             <StringStateVariables />
             <DateStateVariable />
+            <ObjectStateVariable />
         </div>
     )
 }
