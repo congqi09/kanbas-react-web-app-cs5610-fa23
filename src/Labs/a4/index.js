@@ -4,6 +4,7 @@ import React from "react"
 // import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
 import EventObject from "./EventObject";
+import Counter from "./Counter";
 function Assignment4() {
     const sayHello = () => alert("Hello")
     return (
@@ -14,6 +15,7 @@ function Assignment4() {
             <ClickEvent/>
             <PassingDataOnEvent /> */}
             <EventObject />
+            <Counter />
         </div>
     );
 }
