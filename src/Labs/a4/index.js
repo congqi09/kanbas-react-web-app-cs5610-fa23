@@ -5,6 +5,7 @@ import React from "react"
 import PassingFunctions from "./PassingFunctions";
 import EventObject from "./EventObject";
 import Counter from "./Counter";
+import BooleanStateVariables from "./BooleanStateVariables";
 function Assignment4() {
     const sayHello = () => alert("Hello")
     return (
@@ -16,7 +17,8 @@ function Assignment4() {
             <PassingDataOnEvent /> */}
             <EventObject />
             <Counter />
+            <BooleanStateVariables />
         </div>
-    );
+    )
 }
 export default Assignment4
