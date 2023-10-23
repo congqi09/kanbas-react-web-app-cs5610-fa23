@@ -7,6 +7,7 @@ import EventObject from "./EventObject";
 import Counter from "./Counter";
 import BooleanStateVariables from "./BooleanStateVariables";
 import StringStateVariables from "./StringStateVariables";
+import DateStateVariable from "./DateStateVariable";
 function Assignment4() {
     const sayHello = () => alert("Hello")
     return (
@@ -20,6 +21,7 @@ function Assignment4() {
             <Counter />
             <BooleanStateVariables />
             <StringStateVariables />
+            <DateStateVariable />
         </div>
     )
 }
