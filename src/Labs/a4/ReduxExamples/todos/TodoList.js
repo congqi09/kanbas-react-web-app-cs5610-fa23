@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import TodoForm from "./TodoForm";
+import TodoItem from "./TodoItem";
 function TodoList() {
     const [todos, setTodos] = useState([
         { id: "1", title: "Learn React" },
@@ -24,27 +26,11 @@ function TodoList() {
         <div>
             <h2>Todo List</h2>
             <ul className="list-group">
-                <li className="list-group-item">
-                <button onClick={() => addTodo(todo)}>Add</button>
-                <button onClick={() => updateTodo(todo)}>Update</button>
-                <input
-                    value={todo.title}
-                    onChange={(e) =>
-                        setTodo({
-                            ...todo,
-                            title: e.target.value,
-                        })
-                    }
-                />
-                </li>
+                <TodoForm todo={todo} setTodo={setTodo} 
+                    addTodo={addTodo} updateTodo={updateTodo} />
                 {todos.map((todo) => (
-                    <li key={todo.id} className="list-group-item">
-                        <button onClick={() => deleteTodo(todo.id)}>
-                            Delete </button>
-                        <button onClick={() => setTodo(todo)}>
-                            Edit </button>
-                        {todo.title}
-                    </li>
+                    <TodoItem todo={todo} 
+                        deleteTodo={deleteTodo} setTodo={setTodo} />
                 ))}
             </ul>
         </div>

@@ -1,5 +1,6 @@
 import React from "react"
 import ReduxExamples from "./ReduxExamples"
+import TodoList from "./ReduxExamples/todos/TodoList"
 // import Add from "./Add";
 // import ClickEvent from "./ClickEvent"
 // import PassingDataOnEvent from "./PassingDataOnEvent";
@@ -33,6 +34,7 @@ function Assignment4() {
         <>
             <h1>Assignment4</h1>
             <ReduxExamples />
+            <TodoList />
         </>
     )
 }
