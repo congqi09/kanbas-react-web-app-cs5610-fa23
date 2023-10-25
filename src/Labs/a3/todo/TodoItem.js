@@ -1,5 +1,4 @@
-const TodoItem = (
-    {
+const TodoItem = ({
         todo = {
             done: true,
             title: 'Buy milk',

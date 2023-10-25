@@ -6,8 +6,8 @@ return(
             <h3>Todo List</h3>
             <ul className="list-group">
                 {
-                    todos.map(todo => {
-                        return(<TodoItem todo={todo}/>);
+                    todos.map((todo, index) => {
+                        return(<TodoItem todo={todo} key={index}/>);
                     })
                 }
             </ul>
