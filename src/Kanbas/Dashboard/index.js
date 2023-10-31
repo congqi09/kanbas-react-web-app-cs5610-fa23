@@ -7,9 +7,10 @@ function Dashboard() {
         name: "New Course", number: "04356",
         startDate: "2023-11-01", endDate: "2023-10-31",
     });
-    const addNewCourse = () => {
-        setCourses([...courses, {...course, _id: new Date().getTime() }]);
+    const addNewCourse = () => { setCourses([...courses, {...course, _id: new Date().getTime() }]);
     };
+    const deleteCourse = (courseId) => {
+        setCourses(courses.filter((course) => course._id !== courseId)) };
 
     return (
         <div>
@@ -28,6 +29,11 @@ function Dashboard() {
             <div className="list-group">
                 {courses.map((course) => (
                     <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
+                        <button onClick = {(event) => {
+                            event.preventDefault();
+                            deleteCourse(course._id);
+                        }}>
+                            Delete </button>
                         {course.name}
                     </Link>
                 ))}
