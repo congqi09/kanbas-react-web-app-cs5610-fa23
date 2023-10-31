@@ -1,19 +1,5 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import db from "../Database";
-function Dashboard() {
-    const [courses, setCourses] = useState(db.courses);
-    const [course, setCourse] = useState({
-        name: "New Course", number: "04356",
-        startDate: "2023-11-01", endDate: "2023-10-31",
-    });
-    const addNewCourse = () => { setCourses([...courses, {...course, _id: new Date().getTime() }]);
-    };
-    const deleteCourse = (courseId) => {
-        setCourses(courses.filter((course) => course._id !== courseId))
-    };
-    const updateCourse = () => { setCourses(courses.map((c) => c._id === course._id ? course : c)) };
-    // course does not have an _id.. I assume....
+function Dashboard({ courses, course,  setCourse, addNewCourse, deleteCourse, updateCourse }) {
     return (
         <div>
             <h1>Dashboard</h1>
