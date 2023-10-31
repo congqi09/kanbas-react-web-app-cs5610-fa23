@@ -10,8 +10,10 @@ function Dashboard() {
     const addNewCourse = () => { setCourses([...courses, {...course, _id: new Date().getTime() }]);
     };
     const deleteCourse = (courseId) => {
-        setCourses(courses.filter((course) => course._id !== courseId)) };
-
+        setCourses(courses.filter((course) => course._id !== courseId))
+    };
+    const updateCourse = () => { setCourses(courses.map((c) => c._id === course._id ? course : c)) };
+    // course does not have an _id.. I assume....
     return (
         <div>
             <h1>Dashboard</h1>
@@ -25,6 +27,7 @@ function Dashboard() {
             <input value={course.endDate} className="form-control" type="date"
                    onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
             <button onClick = {addNewCourse} > Add </button>
+            <button onClick = {updateCourse} > Update </button>
             {/* todo: add some styles? */}
             <div className="list-group">
                 {courses.map((course) => (
