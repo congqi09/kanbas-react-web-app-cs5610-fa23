@@ -15,10 +15,19 @@ function ModuleList() {
             ...modules,
         ])
     }
+    const deleteModule = (moduleId) => {
+        setModules(modules.filter(m => m._id !== moduleId))
+    }    
+    const updateModule = () => {
+        setModules(modules.map(m => m._id === module._id ? module : m)) 
+    }
     return (
         <ul className="list-group">
             <li className="list-group-item">
                 <button onClick={() => { addModule(module) }}> Add </button>
+                <button onClick={updateModule}>
+                    Update
+                </button>
                 <input value={module.name}
                     onChange={(e) => setModule({
                     ...module, name: e.target.value })}
@@ -27,11 +36,18 @@ function ModuleList() {
                     onChange={(e) => setModule({
                     ...module, description: e.target.value })}
                 />
-            </li>
+            </li>            {/* fix bootstrap... */}
             {modules
                 .filter(m => m.course === courseId)
                 .map((module, index) => (
                     <li key={index} className="list-group-item">
+                        <button onClick={e => setModule(module) }>
+                            Edit
+                        </button>
+                        <button
+                            onClick={() => deleteModule(module._id)}>
+                            Delete
+                        </button>
                         <h3>{module.name}</h3>
                         <p>{module.description}</p>
                         <p>{module._id}</p>
